@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=2]
+
+[ext_resource path="res://sprites/checkers.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 32, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 64, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 96, 32, 32, 32 )
+
+[resource]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "active",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "queen_default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "queen_active",
+"speed": 5.0
+} ]
