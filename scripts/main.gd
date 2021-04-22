@@ -328,17 +328,17 @@ func bot_turn():
 	if can_bot_move():
 		var board = get_board()
 		#var changed = $Bot.minimax(board, 3, true)[1]
-		var move = $Bot.minimax(board, 5, true)[1]
+		var move = $Bot.alphabeta(board, 5, true, -100, 100)[1]
 
 		var moving = get_pawn_by_array(move[0].x, move[0].y)
 		var x = move[1].x*32 + 40
 		var y = move[1].y*32 + 56
 		moving.position = Vector2(x,y)
-		
+
 		if move[1].y == 7:
 			moving.is_queen = true
 			moving.sprite.animation = "queen_default"
-			
+
 		for pawn in move[2]:
 			var captured = get_pawn_by_array(pawn.x, pawn.y)
 			$CanvasLayer.remove_child(captured)
