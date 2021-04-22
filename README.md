@@ -6,4 +6,4 @@ In the ZIP file there is a ready Windows executable file with which game can be 
 
 -----------------------------------------------------------------------------------------------------------
 
-Bot is using Minimax Algorithm (there will be update with Alpha-Beta pruning added)
+Bot is using Minimax Algorithm with Alpha-Beta prunning
